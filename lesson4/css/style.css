@@ -156,11 +156,11 @@ body {
     border-radius: 16px;
     box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
     background: rgb(25, 124, 184);
-    padding: 28px 15px;
+    padding: 28px;
 }
 
 .card-flex-title {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 27px;
     text-transform: uppercase;
