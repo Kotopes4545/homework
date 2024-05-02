@@ -1,0 +1,29 @@
+body{
+    background: #f9ebeb;
+}
+
+.block{
+    position: relative;
+}
+
+.block--white{
+    max-width: 50vw;
+    min-height: 100px;
+    margin: 0 auto;
+    background: #919191;
+    position: fixed;    
+    bottom: 100px;
+    right: 50px;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.block--red{
+    width: 100px;
+    height: 100px;
+    background: rgb(251, 62, 62);
+    border-radius: 100px;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
