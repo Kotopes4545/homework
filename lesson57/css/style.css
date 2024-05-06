@@ -1,0 +1,35 @@
+body {
+  background: #333333;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.title::before {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: rgb(233, 76, 76);
+  border-radius: 100px;
+  margin-right: 15px;
+  border: 4px solid #fff;
+}
+
+.title::after{
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: rgb(71, 59, 247);
+  border-radius: 100px;
+  margin-left: 15px;
+  border: 4px solid #fff;
+}

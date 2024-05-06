@@ -1,0 +1,168 @@
+.wrapper {
+  background: #2a2a2a;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1{
+  width: 440px;
+  background: #5c5c5c;
+  height: 440px;
+  position: absolute;
+}
+
+.container {
+  width: 300px;
+  background: #5c5c5c;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+.block {
+  width: 70px;
+  height: 70px;
+  background: rgb(82, 142, 82);
+  position: absolute;
+  
+}
+
+.block1{
+  width: 70px;
+  height: 70px;
+  background: rgb(82, 142, 82);
+  position: absolute;
+}
+
+/* ============================================ */
+
+.block {
+  animation: move-block 5s .2s infinite
+}
+
+.block1{
+  animation: move-block1 5s .2s infinite
+}
+
+@keyframes move-block {
+  0% {
+    width: 70px;
+    height: 70px;
+    background: rgb(82, 142, 82);
+    left: 0px;
+    top: 0px;
+  }
+
+  25%{
+    width: 70px;
+    height: 70px;
+    left: calc(100% - 70px);
+    top: 0px;
+    /* right: 0px; */
+  }
+
+  50%{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: rgb(183, 121, 121);
+    /* right: 0px; */
+    left: calc(100% - 70px);
+    top: calc(100% - 70px);
+  }
+
+  75%{
+    width: 70px;
+    height: 70px;
+    background: rgb(82, 142, 82);
+    left: 0px;
+    top: calc(100% - 70px);
+  }
+
+  100% {
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes move-block1 {
+  0% {
+    width: 70px;
+    height: 70px;
+    background: rgb(82, 142, 82);
+    left: 0px;
+    top: 0px;
+  }
+
+  12.5%{
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    background: rgb(107, 107, 254);
+  }
+
+  25%{
+    width: 70px;
+    height: 70px;
+    left: calc(100% - 70px);
+    top: 0px;
+    background: rgb(200, 83, 200);
+  }
+
+  37.5%{
+    width: 70px;
+    height: 100%;
+    left: calc(100% - 70px);
+    top: 0px;
+    background: rgb(203, 79, 79);
+  }
+
+  50%{
+    width: 70px;
+    height: 70px;
+    left: calc(100% - 70px);
+    top: calc(100% - 70px);
+    background: rgb(200, 83, 200);
+  }
+
+  67.5%{
+    width: 100%;
+    height: 70px;
+    top: calc(100% - 70px);
+    left: 0px;
+  }
+
+  75%{
+    width: 70px;
+    height: 70px;
+    background: rgb(200, 83, 200);
+    left: 0px;
+    top: calc(100% - 70px);
+  }
+
+  87.5%{
+    width: 70px;
+    height: 100%;
+    right: calc(100% - 70px);
+    top: 0px;
+    background: rgb(107, 107, 254);
+  }
+
+  100% {
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    background: rgb(82, 142, 82);
+  }
+}
